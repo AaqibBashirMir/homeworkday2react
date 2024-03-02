@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: pink;">
+    <div class="wrapper" style="display: flex;  justify-content: center; align-items: center;">
+
+    </div>
+    <script>
+       let child=React.createElement("div",{style:{margin:"10px",padding:"10px",height:"auto",width:"40vw",boxShadow:"0 0 10px gray",borderRadius:"20px",backgroundColor:"black",color:"white"}},[
+        React.createElement("h1",null,"Topics Covered"),
+        React.createElement("p",{style:{fontSize:"20px"}},"The following are the list of the topics we covered in MDN learning"),
+        React.createElement("a",{style:{fontSize:"20px"},href:"https://www.techopedia.com/definition/5613/web"},"Getting started with web"),
+        React.createElement("p",{style:{fontSize:"20px"}},"Provide web developement introduction for complete beginers"),
+        React.createElement("a",{style:{fontSize:"20px"},href:"https://stuyhsdesign.wordpress.com/basic-html/structure-html-document/"},"Html-web structure"),
+        React.createElement("p",{style:{fontSize:"20px"}},"Html is language that is used to build structure of different parts of content and define what their meaning and purpose is. This topic teaches html in detail"),
+        React.createElement("a",{style:{fontSize:"20px"},href:"https://www.w3schools.com/html/html_css.asp"},"Css-stlying web"),
+        React.createElement("p",{style:{fontSize:"20px"}},"Css is the language that we use to create animations making more attractive our web pages inhence to attend clients or customers attention, we can build web pages very attractive by means of css.")
+       ])
+
+       ReactDOM.render(child,document.querySelector(".wrapper"))
+    </script>
+</body>
+</html>
